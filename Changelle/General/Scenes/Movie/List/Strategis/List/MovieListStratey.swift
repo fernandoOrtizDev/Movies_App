@@ -2,7 +2,7 @@
 //  MovieListStratey.swift
 //  Changelle
 //
-//  Created by Daniel Stiven Britto Argote on 18/08/25.
+//  Created by Fernando Ortiz on 18/08/25.
 //
 import Combine
 

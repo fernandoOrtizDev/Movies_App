@@ -2,7 +2,7 @@
 //  CarListFilterCarNameStrategy.swift
 //  DemoSwiftUI
 //
-//  Created by Kenyi Rodriguez on 4/08/25.
+//  Created by Fernando Ortiz on 4/08/25.
 //
 import Combine
 struct MovListFilterLocalStorageStrategy: MovieListFilterStrategy {
