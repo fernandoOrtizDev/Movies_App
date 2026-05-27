@@ -6,7 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		185B85562FC784E900F53A98 /* movie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185B85542FC784E900F53A98 /* movie.xcdatamodeld */; };
+		9F46CB9B2E54202500D7E7CC /* Favorite+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46CB992E54202500D7E7CC /* Favorite+CoreDataClass.swift */; };
+		9F46CB9C2E54202500D7E7CC /* Favorite+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46CB9A2E54202500D7E7CC /* Favorite+CoreDataProperties.swift */; };
+		9FF6065F2E4F74AA006C57E9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF6065E2E4F74AA006C57E9 /* Alamofire */; };
+		9FF606632E4F76F5006C57E9 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF606622E4F76F5006C57E9 /* Lottie */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		185B85552FC784E900F53A98 /* movie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = movie.xcdatamodel; sourceTree = "<group>"; };
+		9F46CB992E54202500D7E7CC /* Favorite+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9F46CB9A2E54202500D7E7CC /* Favorite+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9FE54D112E4E8EA4005F27C9 /* Changelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Changelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -23,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF6065F2E4F74AA006C57E9 /* Alamofire in Frameworks */,
+				9FF606632E4F76F5006C57E9 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +45,9 @@
 		9FE54D082E4E8EA4005F27C9 = {
 			isa = PBXGroup;
 			children = (
+				185B85542FC784E900F53A98 /* movie.xcdatamodeld */,
+				9F46CB992E54202500D7E7CC /* Favorite+CoreDataClass.swift */,
+				9F46CB9A2E54202500D7E7CC /* Favorite+CoreDataProperties.swift */,
 				9FE54D132E4E8EA4005F27C9 /* Changelle */,
 				9FE54D122E4E8EA4005F27C9 /* Products */,
 			);
@@ -65,6 +81,8 @@
 			);
 			name = Changelle;
 			packageProductDependencies = (
+				9FF6065E2E4F74AA006C57E9 /* Alamofire */,
+				9FF606622E4F76F5006C57E9 /* Lottie */,
 			);
 			productName = Changelle;
 			productReference = 9FE54D112E4E8EA4005F27C9 /* Changelle.app */;
@@ -94,6 +112,10 @@
 			);
 			mainGroup = 9FE54D082E4E8EA4005F27C9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9FF6065D2E4F74AA006C57E9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9FF606612E4F76F5006C57E9 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9FE54D122E4E8EA4005F27C9 /* Products */;
 			projectDirPath = "";
@@ -119,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185B85562FC784E900F53A98 /* movie.xcdatamodeld in Sources */,
+				9F46CB9B2E54202500D7E7CC /* Favorite+CoreDataClass.swift in Sources */,
+				9F46CB9C2E54202500D7E7CC /* Favorite+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +345,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FF6065D2E4F74AA006C57E9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		9FF606612E4F76F5006C57E9 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FF6065E2E4F74AA006C57E9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FF6065D2E4F74AA006C57E9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9FF606622E4F76F5006C57E9 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FF606612E4F76F5006C57E9 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		185B85542FC784E900F53A98 /* movie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				185B85552FC784E900F53A98 /* movie.xcdatamodel */,
+			);
+			currentVersion = 185B85552FC784E900F53A98 /* movie.xcdatamodel */;
+			path = movie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9FE54D092E4E8EA4005F27C9 /* Project object */;
 }

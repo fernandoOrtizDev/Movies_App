@@ -1,17 +1,21 @@
 //
-//  ChangelleApp.swift
-//  Changelle
+//  DemoSwiftUIApp.swift
+//  DemoSwiftUI
 //
-//  Created by Daniel Stiven Britto Argote on 14/08/25.
+//  Created by Fernando Ortiz Escobar on 28/05/25.
 //
 
 import SwiftUI
 
 @main
-struct ChangelleApp: App {
+struct DemoSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack{
+                NavigatorView(root: HomeView.build())
+            }
+            
         }
     }
 }
+
